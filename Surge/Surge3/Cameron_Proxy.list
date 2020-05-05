@@ -1,12 +1,11 @@
 # Cameron_Proxy 规则 定期更新
 
-DOMAIN-SUFFIX,gfycat.com
+DOMAIN-SUFFIX,gfycat.com,force-remote-dns
 
 DOMAIN-SUFFIX,humblr.social
 DOMAIN-SUFFIX,nature.com
 DOMAIN-SUFFIX,covidtracking.com
 DOMAIN-SUFFIX,teamviewer.com
-DOMAIN-SUFFIX,suying666.info,DIRECT
 DOMAIN-SUFFIX,appcenter.ms
 DOMAIN-SUFFIX,microsofttranslator.com
 DOMAIN-SUFFIX,phys.org
@@ -14,10 +13,9 @@ DOMAIN-SUFFIX,theepochtimes.f2vr2q.net
 DOMAIN-SUFFIX,theepochtimes.com
 DOMAIN-SUFFIX,liveatc.net
 DOMAIN-SUFFIX,forexlive.com
-DOMAIN-SUFFIX,wikimedia.org,PROXY
+DOMAIN-SUFFIX,wikimedia.org
 DOMAIN-SUFFIX,app-measurement.com
-DOMAIN-SUFFIX,pageviewp.icbc.com.cn,DIRECT
-DOMAIN-SUFFIX,ifixit.com,PROXY
+DOMAIN-SUFFIX,ifixit.com
 DOMAIN-SUFFIX,newtumbl.com
 DOMAIN-SUFFIX,eso.org
 DOMAIN-SUFFIX,maxmind.com
