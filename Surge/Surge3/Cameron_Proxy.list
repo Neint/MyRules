@@ -1,5 +1,7 @@
 # Cameron_Proxy 规则 定期更新
 
+DOMAIN-SUFFIX,gfycat.com
+
 DOMAIN-SUFFIX,humblr.social
 DOMAIN-SUFFIX,nature.com
 DOMAIN-SUFFIX,covidtracking.com
