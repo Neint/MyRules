@@ -1,12 +1,12 @@
 /*
-°®ÃÀ¾ç unlock vip
+çˆ±ç¾Žå‰§ unlock vip
 app download link : app.meiju2018.com
 
 QX : 
-^https?:\/\/mjapp\.\w{1,9}\.com\/index\.php\/app\/ios\/(vod\/show|user\/index) url script-response-body https://raw.githubusercontent.com/ackakakaka/QuantumultX/master/aimeiju.js
+^https?:\/\/mjapp\.\w{1,9}\.com\/index\.php\/app\/ios\/(vod\/show|user\/index) url script-response-body https://raw.githubusercontent.com/Neint/MyRules/master/Surge/Surge3/aimeiju.js
 
-Surge4£º
-http-response ^https?:\/\/mjapp\.\w{1,9}\.com\/index\.php\/app\/ios\/(vod\/show|user\/index) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ackakakaka/QuantumultX/master/aimeiju.js
+Surge4ï¼š
+http-response ^https?:\/\/mjapp\.\w{1,9}\.com\/index\.php\/app\/ios\/(vod\/show|user\/index) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Neint/MyRules/master/Surge/Surge3/aimeiju.js
 */
 
 var body = $response.body;
