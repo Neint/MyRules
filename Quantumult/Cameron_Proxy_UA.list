@@ -1,0 +1,37 @@
+# USER-AGENT-Cameron_Proxy 规则 定期更新
+
+# USER-AGENT规则放后面
+USER-AGENT,Instagram*,Proxy
+USER-AGENT,Pinterest*,Proxy
+USER-AGENT,Apollo*,Proxy
+USER-AGENT,*com.christianselig.Apollo*,Proxy
+USER-AGENT,Google*,Proxy
+USER-AGENT,com.google.*,Proxy
+USER-AGENT,Hangouts*,Proxy
+USER-AGENT,YouTube*,Proxy
+USER-AGENT,Twitter*,Proxy
+USER-AGENT,Flickr*,Proxy
+USER-AGENT,IFTTT*,Proxy
+USER-AGENT,BBCNews*,Proxy
+USER-AGENT,NYTimes*,Proxy
+USER-AGENT,Reddit*,Proxy
+USER-AGENT,reddit*,Proxy
+USER-AGENT,houzz*,Proxy
+USER-AGENT,Mosaic%20Player*,Proxy
+USER-AGENT,LINE*,Proxy
+USER-AGENT,hangtag*,Proxy
+USER-AGENT,archeryking*,Proxy
+USER-AGENT,Gboard*,Proxy
+USER-AGENT,Tumblr*,Proxy
+USER-AGENT,Udacity*,Proxy
+USER-AGENT,com.vk.*,Proxy
+USER-AGENT,Artsy*,Proxy
+USER-AGENT,Trips*,Proxy
+USER-AGENT,com.lonelyplanet.trips*,Proxy
+USER-AGENT,TextNow*,Proxy
+USER-AGENT,allwome*,Proxy
+USER-AGENT,Tasty*,Proxy
+USER-AGENT,Twitch*,Proxy
+USER-AGENT,Pandora*,Proxy
+USER-AGENT,Spotify*,Proxy
+USER-AGENT,jigspace*,Proxy

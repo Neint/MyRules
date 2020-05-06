@@ -1,0 +1,25 @@
+# Cameron_Proxy 规则 定期更新
+
+DOMAIN-SUFFIX,gfycat.com,Proxy,force-remote-dns
+
+DOMAIN-SUFFIX,humblr.social,Proxy
+DOMAIN-SUFFIX,nature.com,Proxy
+DOMAIN-SUFFIX,covidtracking.com,Proxy
+DOMAIN-SUFFIX,teamviewer.com,Proxy
+DOMAIN-SUFFIX,appcenter.ms,Proxy
+DOMAIN-SUFFIX,microsofttranslator.com,Proxy
+DOMAIN-SUFFIX,phys.org,Proxy
+DOMAIN-SUFFIX,theepochtimes.f2vr2q.net,Proxy
+DOMAIN-SUFFIX,theepochtimes.com,Proxy
+DOMAIN-SUFFIX,liveatc.net,Proxy
+DOMAIN-SUFFIX,forexlive.com,Proxy
+DOMAIN-SUFFIX,wikimedia.org,Proxy
+DOMAIN-SUFFIX,app-measurement.com,Proxy
+DOMAIN-SUFFIX,ifixit.com,Proxy
+DOMAIN-SUFFIX,newtumbl.com,Proxy
+DOMAIN-SUFFIX,eso.org,Proxy
+DOMAIN-SUFFIX,maxmind.com,Proxy
+
+# 国家规则
+DOMAIN-SUFFIX,.tw,Proxy
+DOMAIN-SUFFIX,.au,Proxy
