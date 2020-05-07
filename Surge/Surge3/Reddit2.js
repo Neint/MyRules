@@ -19,7 +19,7 @@ if (body.data && body.data.subreddit && body.data.subreddit.posts && body.data.s
   body.data.subreddit.posts.edges = body.data.subreddit.posts.edges.filter(i => i && i.node && (i.node.__typename !== "AdPost"))
 }
 */
-if (body.data.home.posts.edges) {
+if (body.data && body.data.home && body.data.home.posts && body.data.home.posts.edges) {
   body.data.home.posts.edges = body.data.home.posts.edges.filter(i => i && i.node && (i.node.__typename !== "AdPost"))
 }
 
