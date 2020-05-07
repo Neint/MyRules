@@ -14,9 +14,15 @@ hostname = %APPEND% gql.reddit.com
 
 const body = JSON.parse($response.body)
 
+/*
 if (body.data && body.data.subreddit && body.data.subreddit.posts && body.data.subreddit.posts.edges) {
   body.data.subreddit.posts.edges = body.data.subreddit.posts.edges.filter(i => i && i.node && (i.node.__typename !== "AdPost"))
 }
+*/
+if (body.data.home.post.edges) {
+  body.data.home.post.edges = body.data.home.post.edges.filter(i => i && i.node && (i.node.__typename !== "AdPost"))
+}
+
 $done({
   body: JSON.stringify(body)
 })
