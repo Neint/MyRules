@@ -1,0 +1,9 @@
+#!name=Reddit
+#!desc=Reddit官方客户端去除时间线Promoted广告
+#!system=ios
+
+[MITM]
+hostname = %APPEND% oauth.reddit.com
+
+[Script]
+http-response ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\/prefs\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Xu1o/Surge/master/Script/Reddit.js,script-update-interval=0
