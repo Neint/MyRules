@@ -17,6 +17,6 @@ obj['seen_premium_adblock_modal'] = true;
 obj['has_subscribed_to_premium'] = true;
 obj['user_is_subscriber'] = true;
 obj['safe_search'] = false;
-obj['coins'] = 100000;
+// obj['coins'] = 100000;
 
 $done({body: JSON.stringify(obj)});
