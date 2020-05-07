@@ -23,6 +23,4 @@ if (body.data && body.data.home && body.data.home.posts && body.data.home.posts.
   body.data.home.posts.edges = body.data.home.posts.edges.filter(i => i && i.node && (i.node.__typename !== "AdPost"))
 }
 
-$done({
-  body: JSON.stringify(body)
-})
+$done({body: JSON.stringify(body)});
