@@ -3,9 +3,10 @@
 #!system=ios
 
 [MITM]
-hostname = %APPEND% oauth.reddit.com, gql.reddit.com
+# hostname = %APPEND% oauth.reddit.com, gql.reddit.com
+hostname = %APPEND% gql.reddit.com
 
 [Script]
-http-response ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\/prefs\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Neint/MyRules/master/Surge/Surge3/Reddit.js,script-update-interval=0
-http-response ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\.json\?raw_json\=1 requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Neint/MyRules/master/Surge/Surge3/Reddit1.js,script-update-interval=0
+# http-response ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\/prefs\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Neint/MyRules/master/Surge/Surge3/Reddit.js,script-update-interval=0
+# http-response ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\.json\?raw_json\=1 requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Neint/MyRules/master/Surge/Surge3/Reddit1.js,script-update-interval=0
 http-response ^https?:\/\/gql\.reddit\.com requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Neint/MyRules/master/Surge/Surge3/Reddit2.js,script-update-interval=0
