@@ -1,4 +1,6 @@
 /*
+来源：https://github.com/Xu1o/Surge/tree/master
+
 #!name=Reddit
 #!desc=Reddit官方客户端去除时间线Promoted广告
 #!system=ios
@@ -7,12 +9,13 @@
 hostname = %APPEND% oauth.reddit.com
 
 [Script]
-http-response ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\/prefs\.json requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Neint/MyRules/master/Surge/Surge3/Reddit.js,script-update-interval=0
+http-response ^https?:\/\/oauth\.reddit\.com\/api\/v1\/me\.json\?raw_json\=1" requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Neint/MyRules/master/Surge/Surge3/Reddit1.js,script-update-interval=0
 */
 
 var obj = JSON.parse($response.body); 
-obj['third_party_site_data_personalized_ads'] = false;
-obj['hide_ads'] = true;
-obj['activity_relevant_ads'] = false;
-obj['third_party_data_personalized_ads'] = false;
+obj['seen_premium_adblock_modal'] = true;
+obj['has_subscribed_to_premium'] = true;
+obj['user_is_subscriber'] = true;
+obj['safe_search'] = false;
+
 $done({body: JSON.stringify(obj)});
