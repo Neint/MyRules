@@ -1,5 +1,10 @@
 # Cameron_Reject 规则 定期更新
 
+DOMAIN-SUFFIX,trafficjunky.net
+DOMAIN-SUFFIX,afcpatrk.com
+DOMAIN-KEYWORD,adv.ccb.com
+DOMAIN-SUFFIX,adtng.com
+
 # 阻止营石云App广告
 URL-REGEX,systemName=ad_show
 DOMAIN-SUFFIX,adashbc.ut.taobao.com
