@@ -15,3 +15,9 @@ PROCESS-NAME,WebTorrent Helper
 DOMAIN-KEYWORD,feheadline.com
 DOMAIN-SUFFIX,sv.map.baidu.com
 DOMAIN-SUFFIX,xmj.app
+DOMAIN-SUFFIX,newvector.map.baidu.com
+DOMAIN-SUFFIX,shoudian.org
+DOMAIN-SUFFIX,xunlei.com
+IP-CIDR,119.29.29.1/16, no-resolve
+IP-CIDR,223.5.5.1/16, no-resolve
+IP-CIDR,223.6.6.1/16, no-resolve

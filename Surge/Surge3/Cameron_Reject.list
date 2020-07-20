@@ -4,6 +4,10 @@ DOMAIN-SUFFIX,trafficjunky.net
 DOMAIN-SUFFIX,afcpatrk.com
 DOMAIN-KEYWORD,adv.ccb.com
 DOMAIN-SUFFIX,adtng.com
+DOMAIN-SUFFIX,jmkjmob2.xyz
+DOMAIN-SUFFIX,qlogo.cn
+URL-REGEX,http:\/\/.+\/GetADInfo
+DOMAIN-SUFFIX,imedao.com
 
 # 阻止营石云App广告
 URL-REGEX,systemName=ad_show

@@ -23,6 +23,8 @@ if (body.data && body.data.home && body.data.home.posts && body.data.home.posts.
   body.data.home.posts.edges = body.data.home.posts.edges.filter(i => i && i.node && (i.node.__typename !== "AdPost"))
 } else if (body.data && body.data.popular && body.data.popular.posts && body.data.popular.posts.edges) {
   body.data.popular.posts.edges = body.data.popular.posts.edges.filter(i => i && i.node && (i.node.__typename !== "AdPost"))
+} else if (body.data && body.data.subreddit && body.data.subreddit.posts && body.data.subreddit.posts.edges) {
+  body.data.subreddit.posts.edges = body.data.subreddit.posts.edges.filter(i => i && i.node && (i.node.__typename !== "AdPost"))
 }
 
 $done({body: JSON.stringify(body)});

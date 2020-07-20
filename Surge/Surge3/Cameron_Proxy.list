@@ -19,6 +19,7 @@ DOMAIN-SUFFIX,ifixit.com,force-remote-dns
 DOMAIN-SUFFIX,newtumbl.com
 DOMAIN-SUFFIX,eso.org
 DOMAIN-SUFFIX,maxmind.com
+DOMAIN-SUFFIX,etahub.com
 
 # 国家规则
 DOMAIN-SUFFIX,.tw
