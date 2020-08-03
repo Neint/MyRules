@@ -87,11 +87,11 @@ DOMAIN-SUFFIX,cdns.soufunimg.com
 DOMAIN-SUFFIX,ads.tremorhub.com
 DOMAIN-SUFFIX,vnet.net
 DOMAIN-SUFFIX,cms.caijingmobile.com
-DOMAIN-KEYWORD,localnetwork.uop
+# DOMAIN-KEYWORD,localnetwork.uop
 DOMAIN-KEYWORD,youzan.com
 DOMAIN-SUFFIX,shop.seecmedia.net
 DOMAIN-SUFFIX,shop.caijingmobile.com
-DOMAIN-KEYWORD,localnetwork.uop
+# DOMAIN-KEYWORD,localnetwork.uop
 DOMAIN-KEYWORD,umengcloud.com
 DOMAIN-KEYWORD,dualstack.adsame
 DOMAIN-SUFFIX,adservice.google.com
