@@ -88,7 +88,7 @@ DOMAIN-SUFFIX,ads.tremorhub.com
 DOMAIN-SUFFIX,vnet.net
 DOMAIN-SUFFIX,cms.caijingmobile.com
 # DOMAIN-KEYWORD,localnetwork.uop
-DOMAIN-KEYWORD,youzan.com
+# DOMAIN-KEYWORD,youzan.com   //Cameron 20201209
 DOMAIN-SUFFIX,shop.seecmedia.net
 DOMAIN-SUFFIX,shop.caijingmobile.com
 # DOMAIN-KEYWORD,localnetwork.uop
