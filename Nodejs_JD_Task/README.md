@@ -85,7 +85,8 @@
    # 东东工厂
    36 * * * * node /scripts/jd_jdfactory.js |ts >> /scripts/logs/jd_jdfactory.log 2>&1
    ```
-   - 目录文件配置好之后在 `jd_scripts`目录执行。  
+
+3. 目录文件配置好之后在 `jd_scripts`目录执行。  
 
     `docker-compose up -d` 启动（修改docker-compose.yml后需要使用此命令使更改生效）；  
     `docker-compose logs` 打印日志；  
@@ -94,7 +95,7 @@
     `docker-compose restart` 重启容器；  
     `docker-compose down` 停止并删除容器；  
 
-   - 你可能会用到的命令
+4. 你可能会用到的命令
 
     `docker exec -it jd_scripts /bin/sh -c 'git -C /scripts pull && node /scripts/jd_bean_change.js'`  手动运行一脚本   
     `docker exec -it jd_scripts /bin/sh -c 'env'`  查看设置的环境变量  
