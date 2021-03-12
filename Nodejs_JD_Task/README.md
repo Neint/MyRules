@@ -1,6 +1,9 @@
 ## 说明：
 * 项目来源：
-  > https://gitee.com/lxk0301/jd_docker/tree/master
+  > [gitee的lxk0301/jd_docker](https://gitee.com/lxk0301/jd_docker/)  
+  > [是时候来薅京东的羊毛了，自动化签到脚本！](https://juejin.cn/post/6894878716192063501)  
+
+* `jd_scripts`文件夹下的源码是将`lxk0301/jd_docker`通过Docker部署到VPS上后，从Docker的镜像目录上下载回来的，所以脚本更新时，需要先通过VPS更新Docker镜像，再从镜像目录去下载脚本（Gitee仓库没有脚本源码！）
 
 ---
 ## 挂机方式一：云函数方式
@@ -10,14 +13,14 @@
 4. 高级-环境配置，内存选`64MB`，执行超时`600`秒
 5. 高级-环境配置-环境变量，增加下面的环境变量
    ```properties
-   #环境变量：
+   #环境变量（这里做了脱敏真实cookie值和机器人token见env.txt文件）：
    CRZAY_JOY_COIN_ENABLE=N
-   JD_COOKIE=pt_key=AAJgSNrsADAS4xtK3wmo1eZQJWR63OyYMq87JFNZo9OmHEaMeqY22KsJHz5soqMppk5TlUTiLOI;pt_pin=Neint;&pt_key=AAJgSYqxADABG5rcVYL-e3vTCEwofGhm10BBZy67-ezCtEhf5y4F972EMIm6cnNpMbKJ0OBAauo; pt_pin=jd_7b1c5d479a095;
+   JD_COOKIE=pt_key=AJgSNrsADAS4xtKYMq87JFNZo9OmHEaMeqY22KsJHz5soqMppk5TlUTiLOI;pt_pin=Nent;&pt_key=AAJgSYqxADBGhm10BBZy67-ezCtEhf5y4F972EMIm6cnNMbKJ0OBAauo;pt_pin=jd_7b1c5479a095;
    RANDOM_DELAY_MAX=120
    TENCENTSCF_SOURCE_TYPE=local
    TENCENTSCF_SOURCE_URL=https://jdsharedresourcescdn.azureedge.net/jdresource/
-   TG_BOT_TOKEN=1536371451:AAGcDyGALk1jTicB2G16hl6z1xz60Br49lQ
-   TG_USER_ID=362944233
+   TG_BOT_TOKEN=153671451:AAGcDyGALk12G16hl6z1xz60Br49l
+   TG_USER_ID=3629423
    ```
 6. 点击完成，然后配置触发器：
 
