@@ -3,7 +3,10 @@
   > [gitee的lxk0301/jd_docker](https://gitee.com/lxk0301/jd_docker/)  
   > [是时候来薅京东的羊毛了，自动化签到脚本！](https://juejin.cn/post/6894878716192063501)  
 
-* `jd_scripts`文件夹下的源码是将`lxk0301/jd_docker`通过Docker部署到VPS上后，从Docker的镜像目录上下载回来的，所以脚本更新时，需要先通过VPS更新Docker镜像，再从镜像目录去下载脚本（Gitee仓库没有脚本源码！）
+* `jd_scripts`文件夹下的源码是将`lxk0301/jd_docker`通过Docker部署到VPS上后，从Docker的镜像目录上下载回来的，所以脚本更新时，需要先通过VPS更新Docker镜像，再从镜像目录去下载脚本（Gitee仓库没有脚本源码！） 
+* `jd_scripts_crazy_joy_coin`文件夹是从`jd_scripts`抽离出来的crazyjoy挂机脚本 
+* `jd_scripts_jd_car_exchange`文件夹是从`jd_scripts`抽离出来的京东汽车兑换金豆挂机脚本 
+* `jd_scripts_crazy_joy_coin`文件夹是从`jd_scripts`抽离出来的京东宠旺旺兑换奖品挂机脚本 
 
 ---
 ## 挂机方式一：云函数方式
@@ -19,8 +22,8 @@
    RANDOM_DELAY_MAX=120
    TENCENTSCF_SOURCE_TYPE=local
    TENCENTSCF_SOURCE_URL=https://jdsharedresourcescdn.azureedge.net/jdresource/
-   TG_BOT_TOKEN=153671451:AAGcDyGALk12G16hl6z1xz60Br49l
-   TG_USER_ID=3629423
+   BARK_PUSH=DMh4mKnuWVUPL
+   BARK_SOUND=shake
    ```
 6. 点击完成，然后配置触发器：
 
@@ -35,17 +38,26 @@
     # 2 宠汪汪积分兑换奖品 
     #Cron表达式：
     55-59 59 23,7,15 * * * *
-    0-15 0 0,8,16 * * * *
+    0-10 0 0,8,16 * * * *
     #附加信息：
     jd_joy_reward
 
     # 3 京东汽车兑换
     #Cron表达式：
     55-59 59 23 */1 * * *
-    0-15 0 0 */1 * * *
+    0-10 0 0 */1 * * *
     #附加信息：
     jd_car_exchange
+
+    # 4 京东多合一签到脚本
+    #Cron表达式：
+    0 5 0 * * * *
+    #附加信息：
+    jd_bean_sign
+
     ```
+
+7. 注意：如果没有上传`node_modules`文件夹，需打开云函数的`自动安装依赖`开关
 
 ---
 ## 挂机方式二：通过VPS搭建Docker运行
