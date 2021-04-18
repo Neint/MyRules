@@ -18,12 +18,12 @@
    ```properties
    #环境变量（这里做了脱敏真实cookie值和机器人token见env.txt文件）：
    CRZAY_JOY_COIN_ENABLE=N
-   JD_COOKIE=pt_key=AJgSNrsADAS4xtKYMq87JFNZo9OmHEaMeqY22KsJHz5soqMppk5TlUTiLOI;pt_pin=Nent;&pt_key=AAJgSYqxADBGhm10BBZy67-ezCtEhf5y4F972EMIm6cnNMbKJ0OBAauo;pt_pin=jd_7b1c5479a095;
+   JD_COOKIE=pt_key=AAJgdQmkADBV5QXE7atyVh4ntaAWpoxQIN8kXUs7GUDKcC2QhJmCEehgN5j2CQ9Yb8O-n5ENS0M;pt_pin=Neint;&pt_key=AAJgdQpWADAToE7vU3y5MykxHRnhmc2wTJTXJCIT8sQkY17NZgGODvbncuEP9QzryEHAe8xqsgI; pt_pin=jd_7b1c5d479a095;   
    RANDOM_DELAY_MAX=120
    TENCENTSCF_SOURCE_TYPE=local
    TENCENTSCF_SOURCE_URL=https://jdsharedresourcescdn.azureedge.net/jdresource/
    BARK_PUSH=DMh4mKnuWVUPL
-   BARK_SOUND=shake
+   BARK_SOUND=silence
    ```
 6. 点击完成，然后配置触发器：
 
@@ -38,14 +38,14 @@
     # 2 宠汪汪积分兑换奖品 
     #Cron表达式：
     55-59 59 23,7,15 * * * *
-    0-10 0 0,8,16 * * * *
+    0-15 0 0,8,16 * * * *
     #附加信息：
     jd_joy_reward
 
     # 3 京东汽车兑换
     #Cron表达式：
-    55-59 59 23 */1 * * *
-    0-10 0 0 */1 * * *
+    55-59 0 0 */1 * * *
+     0-10 1 0 */1 * * *
     #附加信息：
     jd_car_exchange
 
