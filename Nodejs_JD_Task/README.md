@@ -18,7 +18,7 @@
    ```properties
    #环境变量（这里做了脱敏真实cookie值和机器人token见env.txt文件）：
    CRZAY_JOY_COIN_ENABLE=N
-   JD_COOKIE=pt_key=AAJgdQmkADBV5QXE7atyVh4ntaAWpoxQIN8kXUs7GUDKcC2QhJmCEehgN5j2CQ9Yb8O-n5ENS0M;pt_pin=Neint;&pt_key=AAJgdQpWADAToE7vU3y5MykxHRnhmc2wTJTXJCIT8sQkY17NZgGODvbncuEP9QzryEHAe8xqsgI; pt_pin=jd_7b1c5d479a095;   
+   JD_COOKIE=pt_key=AAJgdQmkADBV5QXE7atyVh4ntaAWpoxQIN8kXUs7GUDKcC2QhJmCEehgN5j2CQ9Yb8O-n5ENS0M;pt_pin=Neint;&pt_key=AAJgdQpWADAToE7vU3y5MykxHRnhmc2wTJTXJCIT8sQkY17NZgGODvbncuEP9QzryEHAe8xqsgI; pt_pin=jd_7b1c5d479a095;
    RANDOM_DELAY_MAX=120
    TENCENTSCF_SOURCE_TYPE=local
    TENCENTSCF_SOURCE_URL=https://jdsharedresourcescdn.azureedge.net/jdresource/
@@ -55,11 +55,17 @@
     #附加信息：
     jd_bean_sign
 
-    # 5 京东宠汪汪偷好友
+    # 5 京东宠汪汪
     #Cron表达式：
-    0 2 0 * * * *
+    0 1 0 * * * *
     #附加信息：
-    jd_joy&jd_joy_steal
+    jd_joy
+
+    # 6 京东宠汪汪好友偷积分、食、喂食
+    #Cron表达式：
+    0 5 0-21/3 * * * *
+    #附加信息：
+    jd_joy_steal
 
     ```
 
