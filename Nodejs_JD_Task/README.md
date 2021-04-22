@@ -12,17 +12,17 @@
 ## 挂机方式一：云函数方式
 1. 新建云函数，选自定义创建
 2. 填写`函数名称`，运行环境选`Nodejs12.16`
-3. 函数代码选`本地上传文件夹`，将`jd_script`或`jd_scripts_crazy_joy_coin`文件夹上传到腾讯云函数
+3. 函数代码选`本地上传文件夹`，将`jd_script_sub`文件夹上传到腾讯云函数
 4. 高级-环境配置，内存选`64MB`，执行超时`600`秒
 5. 高级-环境配置-环境变量，增加下面的环境变量
    ```properties
    #环境变量（这里做了脱敏真实cookie值和机器人token见env.txt文件）：
    CRZAY_JOY_COIN_ENABLE=N
-   JD_COOKIE=pt_key=AAJgdQmkADBV5QXE7atyVh4ntaAWpoxQIN8kXUs7GUDKcC2QhJmCEehgN5j2CQ9Yb8O-n5ENS0M;pt_pin=Neint;&pt_key=AAJgdQpWADAToE7vU3y5MykxHRnhmc2wTJTXJCIT8sQkY17NZgGODvbncuEP9QzryEHAe8xqsgI; pt_pin=jd_7b1c5d479a095;
+   JD_COOKIE=pt_key=****NS0M;pt_pin=Neint;&pt_key=****qsgI;pt_pin=jd_7b1c5d479a095;
    RANDOM_DELAY_MAX=120
    TENCENTSCF_SOURCE_TYPE=local
    TENCENTSCF_SOURCE_URL=https://jdsharedresourcescdn.azureedge.net/jdresource/
-   BARK_PUSH=DMh4mKnuWVUPL
+   BARK_PUSH=****WVUPL
    BARK_SOUND=silence
    ```
 6. 点击完成，然后配置触发器：
@@ -45,7 +45,7 @@
     # 3 京东汽车兑换
     #Cron表达式：
     55-59 0 0 */1 * * *
-     0-10 1 0 */1 * * *
+    0-10 0,1 0 */1 * * *
     #附加信息：
     jd_car_exchange
 
@@ -66,6 +66,18 @@
     0 5 0-21/3 * * * *
     #附加信息：
     jd_joy_steal
+
+    # 7 东东超市兑换奖品
+    #Cron表达式：
+    0-15 0 0 * * * *
+    #附加信息：
+    jd_blueCoin
+
+    # 8 签到领现金
+    #Cron表达式：
+    0-15 0 0 * * * *
+    #附加信息：
+    jd_cash
 
     ```
 
