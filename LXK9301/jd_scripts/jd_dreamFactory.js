@@ -43,10 +43,14 @@ let tuanActiveId = ``, hasSend = false;
 const jxOpenUrl = `openjd://virtual?params=%7B%20%22category%22:%20%22jump%22,%20%22des%22:%20%22m%22,%20%22url%22:%20%22https://wqsd.jd.com/pingou/dream_factory/index.html%22%20%7D`;
 let cookiesArr = [], cookie = '', message = '', allMessage = '';
 const inviteCodes = [
-  'V5LkjP4WRyjeCKR9VRwcRX0bBuTz7MEK0-E99EJ7u0k=@0WtCMPNq7jekehT6d3AbFw==',
-  "gB99tYLjvPcEFloDgamoBw==@7dluIKQMp0bySgcr8AqFgw==",
-  '-OvElMzqeyeGBWazWYjI1Q==',
-  'GFwo6PntxDHH95ZRzZ5uAg=='
+   //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
+   'YhIWCXE58FOHdBGbIOb1dg==@iYLhgmo3xBAJypel6i7ZRQ==@4RGDcQc27qG52c4NWdd8tA==',
+   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
+   'r_5YNg7CPyeWz2YUJzsbgQ==@iYLhgmo3xBAJypel6i7ZRQ==@4RGDcQc27qG52c4NWdd8tA==',
+   'r_5YNg7CPyeWz2YUJzsbgQ==@YhIWCXE58FOHdBGbIOb1dg==@4RGDcQc27qG52c4NWdd8tA==',
+   'r_5YNg7CPyeWz2YUJzsbgQ==@YhIWCXE58FOHdBGbIOb1dg==@iYLhgmo3xBAJypel6i7ZRQ==',
+   'r_5YNg7CPyeWz2YUJzsbgQ==@YhIWCXE58FOHdBGbIOb1dg==@iYLhgmo3xBAJypel6i7ZRQ==',
+   'r_5YNg7CPyeWz2YUJzsbgQ==@YhIWCXE58FOHdBGbIOb1dg==@iYLhgmo3xBAJypel6i7ZRQ=='
 ];
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 $.tuanIds = [];
