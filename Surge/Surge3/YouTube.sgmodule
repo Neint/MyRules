@@ -1,6 +1,9 @@
 #!name=YouTube
 #!desc=YouTube videos removes ads.
 
+# YouTube去广告 模块配置
+# 更新地址：https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Module/YouTube.sgmodule
+
 [Rule]
 URL-REGEX,https?:\/\/.+\.googlevideo\.com\/.+?)(&ctier=L|\/ctier\/L)((&|\/).+?)(,ctier|%2Cctier)((,|%2C),REJECT-TINYGIF
 URL-REGEX,https?:\/\/.+\.googlevideo\.com\/(?!(dclk_video_ads|videoplayback\?)).+(&oad|ctier),REJECT-TINYGIF
